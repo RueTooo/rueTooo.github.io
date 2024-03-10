@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet</title>
+    <!-- leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
+<!-- leaflet js-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    // Map Initialization
+    var map = L.map('map', {minZoom: -5});
+    var bounds = [[-157.8, -252.4], [157.8, 252.4]];
+    var image = L.imageOverlay('labelled_Sylvari_map.png', bounds).addTo(map);
+    map.fitBounds(bounds);
+    //Marker
+    var townIcon = L.icon({
+        iconUrl: 'Skyrim icons/SR-mapicon-Town.png',
+        iconSize: [40, 40],
+        });
+    var singleMarker = L.marker([4.2823944091796875,-159.41481018066406], {icon: townIcon});
+    var popup = singleMarker.bindPopup('This is a marker!').openPopup()
+    popup.addTo(map);
+    var littleton = L.marker([39.61, 55.02], {icon: townIcon}).bindPopup('<a href="https://deep-roots-campaign.vercel.app/entities/np-cs/dig-team/asha-skysong/"><h1> Asha Skysong </h1></a>'),
+        denver    = L.marker([39.74, 64.99]).bindPopup('This is Denver, CO.'),
+        aurora    = L.marker([39.73, 94.8]).bindPopup('This is Aurora, CO.'),
+        golden    = L.marker([39.77, 115.23]).bindPopup('This is Golden, CO.');
+        //.bindPopup('<a href="Web Page Adress Here"><h1> Test Title </h1></a><img src="Link to Image" width=100 height=100 />');
+    var cities = L.layerGroup([littleton, denver, aurora, golden, singleMarker]);
+    //Layer controller
+    var overlayMaps = {
+        "Markers": cities
+    };
+    var baseMaps = {
+    "Map": image,
+};
+    L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+</script>

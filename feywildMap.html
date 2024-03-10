@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet</title>
+    <!-- leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
+<!-- leaflet js-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    // Map Initialization (y, x)
+    var map = L.map('map', {minZoom: -8, crs: L.CRS.Simple, zoomDelta: 1});
+    var bounds = [[0, 0], [-2171, 2897]];
+    var image = L.imageOverlay('Images/Maps/Feywild.jpg', bounds).addTo(map);
+    map.fitBounds(bounds);
+    //Marker
+    var townIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Town.png',
+        iconSize: [30, 30],
+        }),
+    defaultIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Landmark.png',
+        iconSize: [20, 20],
+        }),    
+    fortIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Fort.png',
+        iconSize: [30, 30],    
+        }),
+    keepIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Keep.png',
+        iconSize: [30, 30],
+        }),
+    swIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-To_Skyrim.png',
+        iconSize: [30, 30],
+        }),    
+    castleIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Castle.png',
+        iconSize: [30, 30],
+    })
+    ireaborIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-College_of_Winterhold.png',
+        iconSize: [30, 30],
+    });
+    var resnica = L.marker([-675, 1715], {icon: defaultIcon}).bindTooltip('Resnica'),
+        portalToMultiplePlanes = L.marker([-99.0, 142.5], {icon: defaultIcon}).bindTooltip('Portal to multiple planes'),
+        templeUnclouded = L.marker([-1146, 1408], {icon: defaultIcon}).bindTooltip('Temple Unclouded'),
+        spring = L.marker([-1364, 2204], {icon: defaultIcon}).bindTooltip('Spring'),
+        goodfellowSJadeTower = L.marker([-1693, 2171], {icon: defaultIcon}).bindTooltip('Goodfellow\'s jade tower'),
+        portElsewhere = L.marker([-2031, 2365], {icon: defaultIcon}).bindTooltip('Port Elsewhere'),
+        summerCapitalGreylingstad = L.marker([-1750, 1964], {icon: defaultIcon}).bindTooltip('Greylingstad; Summer capital'),
+        cityOfPeace = L.marker([-1406, 1132], {icon: defaultIcon}).bindTooltip('City of Peace'),
+        fallenHallsOfEristalon = L.marker([-1419, 936], {icon: defaultIcon}).bindTooltip('Fallen Halls of Eristalon'),
+        autumn = L.marker([-1706, 494], {icon: defaultIcon}).bindTooltip('Autumn'),
+        birch = L.marker([-1294, 521], {icon: defaultIcon}).bindTooltip('Birch'),
+        ash = L.marker([-1049, 212], {icon: defaultIcon}).bindTooltip('Ash'),
+        twotowns = L.marker([-955, 711], {icon: defaultIcon}).bindTooltip('Twotowns'),
+        scarletMaple25 = L.marker([-796, 765], {icon: defaultIcon}).bindTooltip('Scarlet Maple'),
+        silverMaple = L.marker([-726, 615], {icon: defaultIcon}).bindTooltip('Silver Maple'),
+        spruceHasPortalToHallowhymn = L.marker([-693, 392], {icon: defaultIcon}).bindTooltip('Spruce; has portal to Hallowhymn'),
+        winter = L.marker([-166, 1450], {icon: defaultIcon}).bindTooltip('Winter'),
+        militaryInstallationFromGreylingstad = L.marker([-1600, 1977], {icon: defaultIcon}).bindTooltip('Military installation from Greylingstad'),
+        bricklewhyteHalflingCommunity = L.marker([-1739, 1420], {icon: defaultIcon}).bindTooltip('Bricklewhyte; halfling community'),
+        lumiPhoenixum = L.marker([-352, 1172], {icon: defaultIcon}).bindTooltip('Lumi Phoenixum'),
+        mosskarmEntrance = L.marker([-489, 862], {icon: defaultIcon}).bindTooltip('Mosskarm entrance'),
+        tayopaTower = L.marker([-130, 416], {icon: defaultIcon}).bindTooltip('Tayopa Tower'),
+        templeToTheRavenQueenCalledTheWatchtowerOrTheCrowSNest = L.marker([-988, 750], {icon: defaultIcon}).bindTooltip('Temple to the Raven Queen; called The Watchtower or The Crow\'s Nest'),
+        mangrove = L.marker([-1905, 591], {icon: defaultIcon}).bindTooltip('Mangrove'),
+        yuanTiBuiltEntranceToADraconicEnclaveCityBuiltInAnExtinctVolcano = L.marker([-1503, 1310], {icon: defaultIcon}).bindTooltip('Yuan Ti-built entrance to a draconic enclave. City built in an extinct volcano'),
+        indunaCraftsLightningCrystalsAndAirshipComponentsFormerlyOfSummer = L.marker([-1503, 1673], {icon: defaultIcon}).bindTooltip('Induna; crafts lightning crystals and airship components; formerly of Summer'),
+        springPandorumSResolve = L.marker([-1364, 2204], {icon: defaultIcon}).bindTooltip('Spring  Pandorum\'s Resolve'),
+        iokonFortress = L.marker([-1540, 2193], {icon: defaultIcon}).bindTooltip('Iokon Fortress'),
+        maraNoniStronghold = L.marker([-1713, 2396], {icon: defaultIcon}).bindTooltip('Mara-noni Stronghold'),
+        tsariMali = L.marker([-1780, 2623], {icon: defaultIcon}).bindTooltip('Tsari Mali'),
+        maehwaUniversity = L.marker([-711, 2365], {icon: defaultIcon}).bindTooltip('Maehwa University'),
+        benaiTower = L.marker([-881, 2018], {icon: defaultIcon}).bindTooltip('Benai Tower'),
+        krystallgardCrystallineFormationsManyFeyDwarvesLiveHere = L.marker([-498, 1801], {icon: defaultIcon}).bindTooltip('Krystallgard; crystalline formations; many fey dwarves live here'),
+        iowamiFortressDwarven = L.marker([-114, 2383], {icon: defaultIcon}).bindTooltip('Iowami Fortress (dwarven)'),
+        resnica = L.marker([-675, 1715], {icon: defaultIcon}).bindTooltip('Resnica'),
+        portalToMultiplePlanes = L.marker([-990, 1425], {icon: defaultIcon}).bindTooltip('Portal to multiple planes'),
+        winterWinterCraterOfCreationSaidToBeTheOriginOldestSpotOfTheFeywild = L.marker([-211, 1394], {icon: defaultIcon}).bindTooltip('Winter; Crater of Creation; said to be the origin/oldest spot of the Feywild'),
+        templeUnclouded = L.marker([-1146, 1408], {icon: defaultIcon}).bindTooltip('Temple Unclouded'),
+        cityOfPeace = L.marker([-1406, 1132], {icon: defaultIcon}).bindTooltip('City of Peace'),//.bindPopup('<a href="OBSIDIAN URL"> Link Title </a>'),
+        myOrigin = L.marker([0, 0], {icon: castleIcon}),
+        secondOrigin = L.marker([-3072, 4096]);
+    var mapMarkers = L.layerGroup([resnica, portalToMultiplePlanes, templeUnclouded, spring, goodfellowSJadeTower, portElsewhere, summerCapitalGreylingstad, cityOfPeace, fallenHallsOfEristalon, autumn, birch, ash, twotowns, scarletMaple25, silverMaple, spruceHasPortalToHallowhymn, winter, militaryInstallationFromGreylingstad, bricklewhyteHalflingCommunity, lumiPhoenixum, mosskarmEntrance, tayopaTower, templeToTheRavenQueenCalledTheWatchtowerOrTheCrowSNest, mangrove, yuanTiBuiltEntranceToADraconicEnclaveCityBuiltInAnExtinctVolcano, indunaCraftsLightningCrystalsAndAirshipComponentsFormerlyOfSummer, springPandorumSResolve, iokonFortress, maraNoniStronghold, tsariMali, maehwaUniversity, benaiTower, krystallgardCrystallineFormationsManyFeyDwarvesLiveHere, iowamiFortressDwarven, resnica, portalToMultiplePlanes, winterWinterCraterOfCreationSaidToBeTheOriginOldestSpotOfTheFeywild, templeUnclouded, cityOfPeace]);
+    //var toYewdon = L.marker([-6,-222], {icon: swIcon}).bindTooltip('To Yewdon');
+    //Layer controller
+    var overlayMaps = {
+        "Markers": mapMarkers,
+        //"Origin": myOrigin, secondOrigin,
+    };
+    var baseMaps = {
+    "Map": image,
+};
+    L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+</script>

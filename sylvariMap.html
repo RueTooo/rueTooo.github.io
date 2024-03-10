@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet</title>
+    <!-- leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
+<!-- leaflet js-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    // Map Initialization
+    var map = L.map('map', {minZoom: -1, crs: L.CRS.Simple, zoomDelta: 1});
+    var bounds = [[-157.8, -252.4], [157.8, 252.4]]; 
+    var image = L.imageOverlay('Images/Maps/labelled_Sylvari_map.png', bounds).addTo(map);
+    map.fitBounds(bounds);
+    //Marker
+    var townIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Town.png',
+        iconSize: [30, 30],
+        }),
+    fortIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Fort.png',
+        iconSize: [30, 30],    
+        }),
+    keepIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Keep.png',
+        iconSize: [30, 30],
+        }),
+    swIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-To_Skyrim.png',
+        iconSize: [30, 30],
+        }),    
+    castleIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Castle.png',
+        iconSize: [30, 30],
+    })
+    ireaborIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-College_of_Winterhold.png',
+        iconSize: [30, 30],
+    });
+    var starfallBastion = L.marker([121,50], {icon: townIcon}).bindTooltip('Starfall Bastion'),
+        ebonthornStronghold  = L.marker([105,-64], {icon: fortIcon}).bindTooltip('Ebonthorn Stronghold'),
+        sablehaven  = L.marker([90,-160], {icon: townIcon}).bindTooltip('Sablehaven'),
+        irieabor  = L.marker([0, 8], {icon: ireaborIcon}).bindTooltip('Irieabor'),
+        queldorianKingdom  = L.marker([50, 203], {icon: ireaborIcon}).bindTooltip('Quel\'dorian Kingdom'),
+        sylvuskaKingdom  = L.marker([-12,203], {icon: ireaborIcon}).bindTooltip('Sylvuska Kingdom'),
+        xunielFief  = L.marker([-61,172], {icon: townIcon}).bindTooltip('Xuniel Fief'),
+        melianmarHarbor  = L.marker([-82,118], {icon: ireaborIcon}).bindTooltip('Melianmar Harbor'),
+        courtOfAetheria  = L.marker([-121,69], {icon: townIcon}).bindPopup('<a href="https://deep-roots-campaign.vercel.app/locations/prime-material-plane-rakauvi/sylvari/court-of-aetheria/" target="_blank"><h1> Court of Aetheria </h1></a>').bindTooltip('<u>Court of Aetheria</u>'),
+        sprocktonSpire  = L.marker([-133,5], {icon: townIcon}).bindTooltip('Sprockton Spire'),
+        orllanarKingdom  = L.marker([-110,-82], {icon: ireaborIcon}).bindTooltip('Orllanar Kingdom'),
+        daolinReach  = L.marker([-83,-136], {icon: townIcon}).bindTooltip('Daolin Reach'),
+        ironwoodCitadel    = L.marker([2,-156], {icon: keepIcon}).bindPopup('<a href="https://deep-roots-campaign.vercel.app/locations/prime-material-plane-rakauvi/sylvari/ironwood-citadel/" target="_blank"><h1> Ironwood Citadel </h1></a>').bindTooltip('<u>Ironwood Citadel</u>');
+    var cities = L.layerGroup([starfallBastion, ebonthornStronghold, sablehaven, irieabor,queldorianKingdom, sylvuskaKingdom, xunielFief, melianmarHarbor, courtOfAetheria, sprocktonSpire, orllanarKingdom, daolinReach, ironwoodCitadel]);
+    var toYewdon = L.marker([-6,-222], {icon: swIcon}).bindTooltip('To Yewdon');
+    //Layer controller
+    var overlayMaps = {
+        "Markers": cities,
+        "Arrows": toYewdon
+    };
+    var baseMaps = {
+    "Map": image,
+};
+    L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+</script>

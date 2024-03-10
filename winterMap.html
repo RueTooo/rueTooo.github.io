@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet</title>
+    <!-- leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
+<!-- leaflet js-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    // Map Initialization (y, x)
+    var map = L.map('map', {minZoom: -5, crs: L.CRS.Simple, zoom: 3, zoomDelta: 1});
+    var bounds = [[0, 0], [-2896, 2896]];
+    var image = L.imageOverlay('Images/Maps/Winter_map.jpg', bounds).addTo(map);
+    map.fitBounds(bounds);
+    //Marker
+    var townIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Town.png',
+        iconSize: [30, 30],
+        }),
+    defaultIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Landmark.png',
+        iconSize: [20, 20],
+        }),    
+    fortIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Fort.png',
+        iconSize: [30, 30],    
+        }),
+    keepIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Keep.png',
+        iconSize: [30, 30],
+        }),
+    swIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-To_Skyrim.png',
+        iconSize: [30, 30],
+        }),    
+    castleIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-Castle.png',
+        iconSize: [30, 30],
+    })
+    ireaborIcon = L.icon({
+        iconUrl: 'Images/Skyrim icons/SR-mapicon-College_of_Winterhold.png',
+        iconSize: [30, 30],
+    });
+var sternDomain = L.marker([-132, 2217], {icon: defaultIcon}).bindTooltip('Stern Domain'),//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),
+stormreachMountains = L.marker([-717, 2625], {icon: defaultIcon}).bindTooltip('Stormreach Mountains'),//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),
+lumiPhoenixum = L.marker([-1640, 2685], {icon: defaultIcon}).bindTooltip('Lumi Phoenixum'),//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),
+veilbreakerLake = L.marker([-2635, 2262], {icon: defaultIcon}).bindTooltip('Veilbreaker Lake'),//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),
+krumholtzMountains = L.marker([-1652, 264], {icon: defaultIcon}).bindTooltip('Krumholtz Mountains'),//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),
+mosskarm = L.marker([-1266, 1403], {icon: defaultIcon}).bindTooltip('Mosskarm'),//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),
+mosskarm = L.marker([-1266, 1403], {icon: defaultIcon}).bindTooltip('Mosskarm');//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),;
+var mapMarkers = L.layerGroup([sternDomain, stormreachMountains, lumiPhoenixum, veilbreakerLake, krumholtzMountains, mosskarm, mosskarm]);
+ //Layer controller
+    var overlayMaps = {
+        "Markers": mapMarkers,
+        //"Origin": myOrigin, secondOrigin,
+    };
+    var baseMaps = {
+    "Map": image,
+};
+    L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+</script>
