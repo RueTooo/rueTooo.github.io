@@ -66,13 +66,14 @@ krumholtzMountains = L.marker([-1652, 264], {icon: defaultIcon}).bindTooltip('Kr
 mosskarm = L.marker([-1266, 1403], {icon: defaultIcon}).bindTooltip('Mosskarm'),//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),
 mosskarm = L.marker([-1266, 1403], {icon: defaultIcon}).bindTooltip('Mosskarm');//.bindPopup('<a href="OBSIDIAN URL" target="_blank"> Link Title </a>'),;
 var mapMarkers = L.layerGroup([sternDomain, stormreachMountains, lumiPhoenixum, veilbreakerLake, krumholtzMountains, mosskarm, mosskarm]);
- //Layer controller
-    var overlayMaps = {
-        "Markers": mapMarkers,
-        //"Origin": myOrigin, secondOrigin,
-    };
-    var baseMaps = {
-    "Map": image,
+//Layer controller
+var overlayMaps = {
+    "Markers": mapMarkers,
+    //"Origin": myOrigin, secondOrigin,
 };
-    L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+var baseMaps = {
+"Map": image,
+};
+L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+map.attributionControl.setPrefix("A Zephyr Harris Map");
 </script>
