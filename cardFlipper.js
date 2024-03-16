@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Set the source attribute of the image to the randomly chosen filename
     randomImageElement.src = "Images/ConstellationCards/" + cardImages[randomIndex] + ".png";
-    randomImageElement.style.width = "300px"; // Set a preferred width for the image (adjust as needed)
-    randomImageElement.style.height = "300px"; // Set a preferred height for the image (adjust as needed)
+    randomImageElement.style.width = "1363px"; // Set a preferred width for the image (adjust as needed)
+    randomImageElement.style.height = "1534px"; // Set a preferred height for the image (adjust as needed)
      // Display the filename
      filenameElement.textContent = cardImages[randomIndex].toUpperCase();
 });
