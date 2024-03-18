@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Click Event</title>
+<style>
+  /* Some basic styling for the images */
+  .card {
+    width: 340px;
+    height: 383px;
+    /* perspective: 1000px; */
+    display: inline-block;
+    margin: 20px;
+    font-family: Roboto, sans-serif;
+    
+    transform-style: preserve-3d;
+    /* -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d; */
+    transition: 01.0s;
+    /* -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s; */
+  }
+
+  .card-inner {
+    width: 340px;
+    height: 383px;
+    transition: transform 01.0s;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .card.flipped .card-inner {
+    transform: rotateX(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    width: 340px;
+    height: 383px;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .card-back {
+    z-index: 2;
+  }
+
+  .card-front {
+    transform: rotateX(180deg);
+  }
+</style>
+</head>
+<body>
+
+<!-- Card with two images -->
+<div class="card" id="card">
+  <div class="card-inner">
+    <div class="card-back">
+      <img src="/Images/ConstellationCards/cardBack.png", width="340px" alt="First Image" onclick="flipCard()">
+    </div>
+    <div class="card-front">
+      <!-- <img src="/Images/ConstellationCards/Centaur.png", width="340px" alt="Second Image"> -->
+      <img id="randomImage" alt="Random Card Image">
+      <p>You drew: <span id="filename"></span></p>
+      <script src="cardFlipper.js"></script>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Function to handle the card flipping
+  function flipCard() {
+    var card = document.getElementById("card");
+    card.classList.toggle("flipped");
+  }
+</script>
+
+</body>
+</html>
+
