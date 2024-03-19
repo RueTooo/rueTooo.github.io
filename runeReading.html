@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rune Reading</title>
+    <style>
+        .stone {
+            position: relative;
+            display: inline-block;
+            width: 300px; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+            background-size: contain; /* Scale the background image to cover the entire element */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+        }
+        .rune-image {
+            position: absolute;
+            top: 50%; /* Center the rune image vertically */
+            left: 50%; /* Center the rune image horizontally */
+            transform: translate(-50%, -50%); /* Center the rune image precisely */
+            max-width: 60%; /* Limit the maximum width of the rune image */
+            max-height: 60%; /* Limit the maximum height of the rune image */
+        }
+        .rune-name{
+            position:absolute;
+            transform: translate(50%, 0%);
+        }
+    </style>    
 </head>
 <body>
-    <img id="randomImage" alt="Random Rune Image">
-    <p>You drew: <span id="filename"></span></p>
+    <div class="stone" id="stone">
+    </div>
+    <h3 class="rune-name">You drew: <span id="filename"></span></h3>
     <script src="runeReadingScript.js"></script>
 </body>
 </html>

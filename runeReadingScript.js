@@ -28,19 +28,27 @@ document.addEventListener("DOMContentLoaded", function () {
         "zeal"
         // Add more filenames as needed
     ];
-
+    const stoneImages = [
+        "Untitled_Artwork-1.png",
+        "Untitled_Artwork-2.png",
+        "Untitled_Artwork-3.png",
+        "Untitled_Artwork-4.png",
+        "Untitled_Artwork-5.png",
+    ];
     // Get a random index from the array
-    const randomIndex = Math.floor(Math.random() * runeImages.length);
-
-    // Get the image element by its ID
-    const randomImageElement = document.getElementById("randomImage");
+    const randomRuneIndex = Math.floor(Math.random() * runeImages.length);
+    const randomStoneIndex = Math.floor(Math.random() * stoneImages.length);
+    // Get the image elements by their IDs
+    const stoneElement = document.getElementById("stone");
+    // Set the background image of the stone to the randomly chosen filename
+    stoneElement.style.backgroundImage = "url('Images/Runestones/" + stoneImages[randomStoneIndex] + "')"; 
+    const runeImageElement = new Image();
+    runeImageElement.src = "Images/Runes/" + runeImages[randomRuneIndex] + ".png";
+    runeImageElement.classList.add("rune-image");
+    // Append the rune image to the stone div
+    stoneElement.appendChild(runeImageElement);
+    //Rune description text
     const filenameElement = document.getElementById("filename"); 
-    //const filenameElement = document.getElementById("filename" + ".png");
-
-    // Set the source attribute of the image to the randomly chosen filename
-    randomImageElement.src = "Images/Runes/" + runeImages[randomIndex] + ".png";
-    randomImageElement.style.width = "300px"; // Set a preferred width for the image (adjust as needed)
-    randomImageElement.style.height = "300px"; // Set a preferred height for the image (adjust as needed)
-     // Display the filename
-     filenameElement.textContent = runeImages[randomIndex].toUpperCase();
+    filenameElement.textContent = runeImages[randomRuneIndex].toUpperCase();
 });
+
