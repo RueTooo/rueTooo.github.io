@@ -1,6 +1,6 @@
 {
   "vaultName": "Deep Roots",
-  "lastExport": 1716737031077,
+  "lastExport": 1716927865919,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title sizing-readable file-explorer-flat background-image paper list-bullet-color list-lines-color check-color check-bg accent-color its-d",
   "useCustomHeadContent": false,
@@ -136,6 +136,8 @@
     "Entities/NPCs/Titans/Winter Court/Archfey/Yatu.md",
     "Entities/NPCs/Titans/Winter Court/Monarchs/Frost.md",
     "Entities/NPCs/Titans/Winter Court/Monarchs/Thaw.md",
+    "Entities/NPCs/Titans/Da'yin Kuya of Infinite Facets.md",
+    "Entities/NPCs/Titans/Hallow.md",
     "Entities/NPCs/Dexanteros.md",
     "Entities/NPCs/Epiphany.md",
     "Entities/NPCs/Josiah.md",
@@ -361,6 +363,7 @@
     "Lore/Legend of the Creation of the Lesser Draconic Races.md",
     "Lore/Spellplague.md",
     "Lore/The Reshuffling of Hell.md",
+    "Maps/Earth Plane map.md",
     "Maps/Earth Plane map obsidian.md",
     "Maps/Feywild map.md",
     "Maps/Feywild map obsidian.md",
@@ -420,15 +423,25 @@
     "Whistles and bells/Card Draw.md",
     "Whistles and bells/Rune Reading.md",
     "Deep Roots Home Page.md",
+    "lib/media/ralph.png",
+    "lib/media/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png",
     "lib/media/character-image-placeholder.jpeg",
+    "lib/media/geode_by_orangesavannah_on_deviantart.jpeg",
+    "lib/media/hallow.jpeg",
+    "lib/media/malachi.png",
+    "lib/media/priku-flintstrike.png",
+    "lib/media/tanix.png",
     "lib/media/runa1-card.png",
     "lib/media/runa-note.jpeg",
-    "lib/media/thaddeus.png",
     "lib/media/aerendyl_-1.png",
     "lib/media/corvaux1-card.png",
     "lib/media/mio.png",
-    "lib/media/luck_of_the_draw.png",
     "lib/media/mirri-card.png",
+    "lib/media/autumn-book.jpeg",
+    "lib/media/city_of_peace_2.jpg",
+    "lib/media/pandorums_resolve.jpg",
+    "lib/media/winter_map.jpg",
+    "lib/media/earth_plane.jpg",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -469,7 +482,6 @@
     "lib/media/leaf.png",
     "lib/media/obsidian.png",
     "lib/media/puck.png",
-    "lib/media/ralph.png",
     "lib/media/bunny.png",
     "lib/media/candor.png",
     "lib/media/capt_havoc.png",
@@ -491,18 +503,16 @@
     "lib/media/zephyrqu_simple_robe_opalized_monk_he_has_a_beard_light_silver__ea4411bf-057d-4689-b715-9482740e9a47.png",
     "lib/media/zephyrqu_tabaxi_lion_prince_-niji_5_ad8cd93f-b93c-4758-9ae8-4cd285541845.png",
     "lib/media/zephyrqu_afropunk_she_has_scaled_skin_blue_robe_72461c9f-ac90-4e4a-9e96-c926a9792db5.png",
-    "lib/media/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png",
     "lib/media/zephyrqu_tabaxi_lion_magnificent_mane_metalic_brocade_robe_blue_95d41adb-bc36-4c7a-86e2-4572bd1b5e9f.png",
     "lib/media/zephyrqu_httpss.mj.run6_rusnocgca_httpss.mj.runs8e11epyr4g_elde_de6758cc-b896-4082-a389-1e06fb84a4cb.png",
     "lib/media/caspian.png",
     "lib/media/josiah.png",
     "lib/media/kelsea.png",
-    "lib/media/malachi.png",
     "lib/media/may.png",
     "lib/media/prideportrait.png",
-    "lib/media/priku-flintstrike.png",
-    "lib/media/tanix.png",
     "lib/media/trisandra.png",
+    "lib/media/thaddeus.png",
+    "lib/media/luck_of_the_draw.png",
     "images/runes/betrayal.png",
     "images/runes/change.png",
     "images/runes/despair.png",
@@ -528,12 +538,7 @@
     "images/runes/wealth.png",
     "images/runes/wisdom.png",
     "images/runes/zeal.png",
-    "lib/media/earth_plane.jpg",
     "lib/media/sandfall_city.jpg",
-    "lib/media/autumn-book.jpeg",
-    "lib/media/city_of_peace_2.jpg",
-    "lib/media/pandorums_resolve.jpg",
-    "lib/media/winter_map.jpg",
     "lib/media/arkehost.jpg",
     "lib/media/feywild.jpg",
     "lib/media/rakauvi_map.jpeg",
@@ -614,8 +619,8 @@
       "dependencies": []
     },
     "Businesses/Froggit About It.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 425,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 459,
       "exportedPath": "businesses/froggit-about-it.html",
       "dependencies": []
     },
@@ -760,7 +765,7 @@
       "dependencies": []
     },
     "Character Logs/Aerendyl 22.md": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 3928,
       "exportedPath": "character-logs/aerendyl-22.html",
       "dependencies": []
@@ -1026,8 +1031,8 @@
       ]
     },
     "Entities/Animal Companions/Ralph.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 547,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 524,
       "exportedPath": "entities/animal-companions/ralph.html",
       "dependencies": [
         "lib/media/ralph.png"
@@ -1040,8 +1045,8 @@
       "dependencies": []
     },
     "Entities/Factions/Stonesong Sentinels.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 0,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 410,
       "exportedPath": "entities/factions/stonesong-sentinels.html",
       "dependencies": []
     },
@@ -1214,8 +1219,8 @@
       ]
     },
     "Entities/NPCs/Dig Team/Ssslannith the Flametouched.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 961,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 997,
       "exportedPath": "entities/npcs/dig-team/ssslannith-the-flametouched.html",
       "dependencies": [
         "lib/media/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png"
@@ -1246,40 +1251,40 @@
       ]
     },
     "Entities/NPCs/Titans/Autumn Court/Archfey/Adansonia.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 883,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 894,
       "exportedPath": "entities/npcs/titans/autumn-court/archfey/adansonia.html",
       "dependencies": [
         "lib/media/character-image-placeholder.jpeg"
       ]
     },
     "Entities/NPCs/Titans/Autumn Court/Archfey/Calyptica.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 859,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 870,
       "exportedPath": "entities/npcs/titans/autumn-court/archfey/calyptica.html",
       "dependencies": [
         "lib/media/character-image-placeholder.jpeg"
       ]
     },
     "Entities/NPCs/Titans/Autumn Court/Archfey/Fitzroya.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 929,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 940,
       "exportedPath": "entities/npcs/titans/autumn-court/archfey/fitzroya.html",
       "dependencies": [
         "lib/media/character-image-placeholder.jpeg"
       ]
     },
     "Entities/NPCs/Titans/Autumn Court/Archfey/Samara.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 810,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 821,
       "exportedPath": "entities/npcs/titans/autumn-court/archfey/samara.html",
       "dependencies": [
         "lib/media/character-image-placeholder.jpeg"
       ]
     },
     "Entities/NPCs/Titans/Autumn Court/Archfey/Thuja.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 851,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 862,
       "exportedPath": "entities/npcs/titans/autumn-court/archfey/thuja.html",
       "dependencies": [
         "lib/media/character-image-placeholder.jpeg"
@@ -1486,8 +1491,8 @@
       ]
     },
     "Entities/NPCs/Titans/Winter Court/Archfey/Ithiliyan.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 1029,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1040,
       "exportedPath": "entities/npcs/titans/winter-court/archfey/ithiliyan.html",
       "dependencies": [
         "lib/media/character-image-placeholder.jpeg"
@@ -1542,8 +1547,8 @@
       ]
     },
     "Entities/NPCs/Epiphany.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 712,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 717,
       "exportedPath": "entities/npcs/epiphany.html",
       "dependencies": [
         "lib/media/character-image-placeholder.jpeg"
@@ -1566,8 +1571,8 @@
       ]
     },
     "Entities/NPCs/Malachi.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 1527,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1507,
       "exportedPath": "entities/npcs/malachi.html",
       "dependencies": [
         "lib/media/malachi.png"
@@ -1598,16 +1603,16 @@
       ]
     },
     "Entities/NPCs/Priku Flintstrike.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 768,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 767,
       "exportedPath": "entities/npcs/priku-flintstrike.html",
       "dependencies": [
         "lib/media/priku-flintstrike.png"
       ]
     },
     "Entities/NPCs/Tanis.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 927,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1043,
       "exportedPath": "entities/npcs/tanis.html",
       "dependencies": [
         "lib/media/tanix.png"
@@ -2716,12 +2721,10 @@
       "dependencies": []
     },
     "Locations/Earth plane (elemental)/Earth Plane.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 298,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 289,
       "exportedPath": "locations/earth-plane-(elemental)/earth-plane.html",
-      "dependencies": [
-        "lib/media/earth_plane.jpg"
-      ]
+      "dependencies": []
     },
     "Locations/Earth plane (elemental)/Sandfall City.md": {
       "modifiedTime": 1716645411289,
@@ -2732,70 +2735,70 @@
       ]
     },
     "Locations/Feywild/Autumn/Autumn.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 2020,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2026,
       "exportedPath": "locations/feywild/autumn/autumn.html",
       "dependencies": [
         "lib/media/autumn-book.jpeg"
       ]
     },
     "Locations/Feywild/Obsidian Range/Obsidian Range.md": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1039,
       "exportedPath": "locations/feywild/obsidian-range/obsidian-range.html",
       "dependencies": []
     },
     "Locations/Feywild/Solanovis/Solanovis.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 1262,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1268,
       "exportedPath": "locations/feywild/solanovis/solanovis.html",
       "dependencies": []
     },
     "Locations/Feywild/Spring/City of Peace.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 473,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 507,
       "exportedPath": "locations/feywild/spring/city-of-peace.html",
       "dependencies": [
         "lib/media/city_of_peace_2.jpg"
       ]
     },
     "Locations/Feywild/Spring/Pandorum's Resolve.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 540,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 574,
       "exportedPath": "locations/feywild/spring/pandorum's-resolve.html",
       "dependencies": [
         "lib/media/pandorums_resolve.jpg"
       ]
     },
     "Locations/Feywild/Spring/Spring.md": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1473,
       "exportedPath": "locations/feywild/spring/spring.html",
       "dependencies": []
     },
     "Locations/Feywild/Stern Domain/Stern Domain.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 1323,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1329,
       "exportedPath": "locations/feywild/stern-domain/stern-domain.html",
       "dependencies": []
     },
     "Locations/Feywild/Summer/Summer.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 1518,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1524,
       "exportedPath": "locations/feywild/summer/summer.html",
       "dependencies": []
     },
     "Locations/Feywild/Winter/Mosskarm.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 452,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 464,
       "exportedPath": "locations/feywild/winter/mosskarm.html",
       "dependencies": [
         "lib/media/winter_map.jpg"
       ]
     },
     "Locations/Feywild/Winter/Scarlet Maple.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 536,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 560,
       "exportedPath": "locations/feywild/winter/scarlet-maple.html",
       "dependencies": []
     },
@@ -2806,14 +2809,14 @@
       "dependencies": []
     },
     "Locations/Feywild/Feywild.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 540,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 663,
       "exportedPath": "locations/feywild/feywild.html",
       "dependencies": []
     },
     "Locations/Hell/Malbolge.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 232,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 247,
       "exportedPath": "locations/hell/malbolge.html",
       "dependencies": []
     },
@@ -2850,20 +2853,20 @@
       "dependencies": []
     },
     "Locations/Prime Material Plane, Rakauvi/Sylvari/Court of Aetheria.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 439,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 474,
       "exportedPath": "locations/prime-material-plane,-rakauvi/sylvari/court-of-aetheria.html",
       "dependencies": []
     },
     "Locations/Prime Material Plane, Rakauvi/Sylvari/Ironwood Citadel.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 570,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 611,
       "exportedPath": "locations/prime-material-plane,-rakauvi/sylvari/ironwood-citadel.html",
       "dependencies": []
     },
     "Locations/Prime Material Plane, Rakauvi/Sylvari/Sablehaven.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 514,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 494,
       "exportedPath": "locations/prime-material-plane,-rakauvi/sylvari/sablehaven.html",
       "dependencies": []
     },
@@ -2924,8 +2927,8 @@
       "dependencies": []
     },
     "Maps/Earth Plane map obsidian.md": {
-      "modifiedTime": 1716645411289,
-      "sourceSize": 647,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 711,
       "exportedPath": "maps/earth-plane-map-obsidian.html",
       "dependencies": [
         "lib/media/earth_plane.jpg"
@@ -3284,11 +3287,16 @@
       "dependencies": []
     },
     "Deep Roots Home Page.md": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 2676,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2972,
       "exportedPath": "deep-roots-home-page.html",
       "dependencies": [
         "images/new-banner.png",
+        "images/creatures/aerendyl_.png",
+        "images/creatures/corvaux1-card.png",
+        "images/creatures/luck_of_the_draw.png",
+        "images/creatures/mio.png",
+        "images/creatures/mirri-card.png",
         "images/deidre-diary.jpeg",
         "images/log-entries/deidre-3.29.24.jpeg",
         "images/log-entries/20th_bloomweave_p2.jpg",
@@ -3317,7 +3325,10 @@
         "images/creatures/may.png",
         "images/creatures/mercy.png",
         "images/creatures/prideportrait.png",
+        "images/creatures/priku-flintstrike.png",
         "images/creatures/zephyrqu_afropunk_she_has_scaled_skin_blue_robe_72461c9f-ac90-4e4a-9e96-c926a9792db5.png",
+        "images/creatures/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png",
+        "images/creatures/tanix.png",
         "images/creatures/zephyrqu_tabaxi_lion_magnificent_mane_metalic_brocade_robe_blue_95d41adb-bc36-4c7a-86e2-4572bd1b5e9f.png",
         "images/creatures/trisandra.png",
         "images/creatures/valor.png",
@@ -3393,7 +3404,7 @@
       "dependencies": []
     },
     "lib/media/ralph.png": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 91490,
       "exportedPath": "lib/media/ralph.png",
       "dependencies": []
@@ -3525,7 +3536,7 @@
       "dependencies": []
     },
     "lib/media/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 841605,
       "exportedPath": "lib/media/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png",
       "dependencies": []
@@ -3549,7 +3560,7 @@
       "dependencies": []
     },
     "lib/media/character-image-placeholder.jpeg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1785172,
       "exportedPath": "lib/media/character-image-placeholder.jpeg",
       "dependencies": []
@@ -3567,7 +3578,7 @@
       "dependencies": []
     },
     "lib/media/malachi.png": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1072123,
       "exportedPath": "lib/media/malachi.png",
       "dependencies": []
@@ -3585,13 +3596,13 @@
       "dependencies": []
     },
     "lib/media/priku-flintstrike.png": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1456458,
       "exportedPath": "lib/media/priku-flintstrike.png",
       "dependencies": []
     },
     "lib/media/tanix.png": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 2082436,
       "exportedPath": "lib/media/tanix.png",
       "dependencies": []
@@ -3753,7 +3764,7 @@
       "dependencies": []
     },
     "lib/media/earth_plane.jpg": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1391836,
       "exportedPath": "lib/media/earth_plane.jpg",
       "dependencies": []
@@ -3765,25 +3776,25 @@
       "dependencies": []
     },
     "lib/media/autumn-book.jpeg": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 9139269,
       "exportedPath": "lib/media/autumn-book.jpeg",
       "dependencies": []
     },
     "lib/media/city_of_peace_2.jpg": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 3017121,
       "exportedPath": "lib/media/city_of_peace_2.jpg",
       "dependencies": []
     },
     "lib/media/pandorums_resolve.jpg": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 5622040,
       "exportedPath": "lib/media/pandorums_resolve.jpg",
       "dependencies": []
     },
     "lib/media/winter_map.jpg": {
-      "modifiedTime": 1716645411289,
+      "modifiedTime": 1716927865919,
       "sourceSize": 9826913,
       "exportedPath": "lib/media/winter_map.jpg",
       "dependencies": []
@@ -3813,391 +3824,391 @@
       "dependencies": []
     },
     "images/new-banner.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1509037,
       "exportedPath": "images/new-banner.png",
       "dependencies": []
     },
     "images/deidre-diary.jpeg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 4669322,
       "exportedPath": "images/deidre-diary.jpeg",
       "dependencies": []
     },
     "images/log-entries/deidre-3.29.24.jpeg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 5170791,
       "exportedPath": "images/log-entries/deidre-3.29.24.jpeg",
       "dependencies": []
     },
     "images/log-entries/20th_bloomweave_p2.jpg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 51773,
       "exportedPath": "images/log-entries/20th_bloomweave_p2.jpg",
       "dependencies": []
     },
     "images/log-entries/23rd_bloomweave_p1.jpg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 44101,
       "exportedPath": "images/log-entries/23rd_bloomweave_p1.jpg",
       "dependencies": []
     },
     "images/log-entries/25th_bloomweave_p1.jpg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 52887,
       "exportedPath": "images/log-entries/25th_bloomweave_p1.jpg",
       "dependencies": []
     },
     "images/screenshot-2.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1089571,
       "exportedPath": "images/screenshot-2.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_tabaxi_princess_-niji_5_0cfbebdf-8dd9-4e8b-ac57-226ebe20b9f3.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 868389,
       "exportedPath": "images/creatures/zephyrqu_tabaxi_princess_-niji_5_0cfbebdf-8dd9-4e8b-ac57-226ebe20b9f3.png",
       "dependencies": []
     },
     "images/creatures/bunny.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1742620,
       "exportedPath": "images/creatures/bunny.png",
       "dependencies": []
     },
     "images/creatures/candor.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1461751,
       "exportedPath": "images/creatures/candor.png",
       "dependencies": []
     },
     "images/creatures/capt_havoc.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1037869,
       "exportedPath": "images/creatures/capt_havoc.png",
       "dependencies": []
     },
     "images/creatures/caspian.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 5725658,
       "exportedPath": "images/creatures/caspian.png",
       "dependencies": []
     },
     "images/creatures/confidence.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1301177,
       "exportedPath": "images/creatures/confidence.png",
       "dependencies": []
     },
     "images/creatures/echo_2.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1598714,
       "exportedPath": "images/creatures/echo_2.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_a_girl_in_armor_is_standing_in_the_style_of_etam_cru_h_2c88aeb9-15d4-4a03-bf5b-7e143123451e.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 2150999,
       "exportedPath": "images/creatures/zephyrqu_a_girl_in_armor_is_standing_in_the_style_of_etam_cru_h_2c88aeb9-15d4-4a03-bf5b-7e143123451e.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_moonlight_sky_oil_painting_of_a_elf_mage_with_silver_h_403e9091-8107-411a-9583-1bedf50cf5c2.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1437721,
       "exportedPath": "images/creatures/zephyrqu_moonlight_sky_oil_painting_of_a_elf_mage_with_silver_h_403e9091-8107-411a-9583-1bedf50cf5c2.png",
       "dependencies": []
     },
     "images/creatures/tivorn.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 911786,
       "exportedPath": "images/creatures/tivorn.png",
       "dependencies": []
     },
     "images/creatures/grace.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 967399,
       "exportedPath": "images/creatures/grace.png",
       "dependencies": []
     },
     "images/creatures/grunk.jpg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 56501,
       "exportedPath": "images/creatures/grunk.jpg",
       "dependencies": []
     },
     "images/creatures/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_29b14ea0-8e4d-404c-a4ad-2709716192f6.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1092353,
       "exportedPath": "images/creatures/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_29b14ea0-8e4d-404c-a4ad-2709716192f6.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_tabaxi_noble_lady_-niji_5_5e312809-ecdc-45db-9589-79d215e55710.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1368618,
       "exportedPath": "images/creatures/zephyrqu_tabaxi_noble_lady_-niji_5_5e312809-ecdc-45db-9589-79d215e55710.png",
       "dependencies": []
     },
     "images/creatures/jinx-the-pirate.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1524278,
       "exportedPath": "images/creatures/jinx-the-pirate.png",
       "dependencies": []
     },
     "images/creatures/josiah.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1402279,
       "exportedPath": "images/creatures/josiah.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_simple_robe_opalized_monk_he_has_a_beard_light_silver__ea4411bf-057d-4689-b715-9482740e9a47.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1031393,
       "exportedPath": "images/creatures/zephyrqu_simple_robe_opalized_monk_he_has_a_beard_light_silver__ea4411bf-057d-4689-b715-9482740e9a47.png",
       "dependencies": []
     },
     "images/creatures/kelsea.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1609088,
       "exportedPath": "images/creatures/kelsea.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_tabaxi_lion_prince_-niji_5_ad8cd93f-b93c-4758-9ae8-4cd285541845.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1176775,
       "exportedPath": "images/creatures/zephyrqu_tabaxi_lion_prince_-niji_5_ad8cd93f-b93c-4758-9ae8-4cd285541845.png",
       "dependencies": []
     },
     "images/creatures/may.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 3200388,
       "exportedPath": "images/creatures/may.png",
       "dependencies": []
     },
     "images/creatures/mercy.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1070655,
       "exportedPath": "images/creatures/mercy.png",
       "dependencies": []
     },
     "images/creatures/prideportrait.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 980318,
       "exportedPath": "images/creatures/prideportrait.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_afropunk_she_has_scaled_skin_blue_robe_72461c9f-ac90-4e4a-9e96-c926a9792db5.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1281686,
       "exportedPath": "images/creatures/zephyrqu_afropunk_she_has_scaled_skin_blue_robe_72461c9f-ac90-4e4a-9e96-c926a9792db5.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_tabaxi_lion_magnificent_mane_metalic_brocade_robe_blue_95d41adb-bc36-4c7a-86e2-4572bd1b5e9f.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1768878,
       "exportedPath": "images/creatures/zephyrqu_tabaxi_lion_magnificent_mane_metalic_brocade_robe_blue_95d41adb-bc36-4c7a-86e2-4572bd1b5e9f.png",
       "dependencies": []
     },
     "images/creatures/trisandra.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1132528,
       "exportedPath": "images/creatures/trisandra.png",
       "dependencies": []
     },
     "images/creatures/valor.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 4739125,
       "exportedPath": "images/creatures/valor.png",
       "dependencies": []
     },
     "images/creatures/verity.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1065494,
       "exportedPath": "images/creatures/verity.png",
       "dependencies": []
     },
     "images/creatures/wisp.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1310982,
       "exportedPath": "images/creatures/wisp.png",
       "dependencies": []
     },
     "images/creatures/zephyrqu_httpss.mj.run6_rusnocgca_httpss.mj.runs8e11epyr4g_elde_de6758cc-b896-4082-a389-1e06fb84a4cb.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1380257,
       "exportedPath": "images/creatures/zephyrqu_httpss.mj.run6_rusnocgca_httpss.mj.runs8e11epyr4g_elde_de6758cc-b896-4082-a389-1e06fb84a4cb.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.svg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 2024729,
       "exportedPath": "lib/media/favicon.svg",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 24388,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 25037,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 157786,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 699752,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 312,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 472,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 468,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
@@ -4211,8 +4222,8 @@
       ]
     },
     "Entities/Player Characters/Retired/Runa.md": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 2491,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2516,
       "exportedPath": "entities/player-characters/retired/runa.html",
       "dependencies": [
         "lib/media/runa1-card.png",
@@ -4228,24 +4239,24 @@
       ]
     },
     "Entities/Player Characters/Aerendyl.md": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 3539,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 3623,
       "exportedPath": "entities/player-characters/aerendyl.html",
       "dependencies": [
         "lib/media/aerendyl_-1.png"
       ]
     },
     "Entities/Player Characters/Corvaux.md": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 2783,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2792,
       "exportedPath": "entities/player-characters/corvaux.html",
       "dependencies": [
         "lib/media/corvaux1-card.png"
       ]
     },
     "Entities/Player Characters/Deidre.md": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 4508,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 4522,
       "exportedPath": "entities/player-characters/deidre.html",
       "dependencies": [
         "lib/media/mio.png"
@@ -4260,21 +4271,21 @@
       ]
     },
     "Entities/Player Characters/Mirri.md": {
-      "modifiedTime": 1716737031077,
-      "sourceSize": 3433,
+      "modifiedTime": 1716927865919,
+      "sourceSize": 3367,
       "exportedPath": "entities/player-characters/mirri.html",
       "dependencies": [
         "lib/media/mirri-card.png"
       ]
     },
     "lib/media/runa1-card.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 3079338,
       "exportedPath": "lib/media/runa1-card.png",
       "dependencies": []
     },
     "lib/media/runa-note.jpeg": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 1178810,
       "exportedPath": "lib/media/runa-note.jpeg",
       "dependencies": []
@@ -4286,19 +4297,19 @@
       "dependencies": []
     },
     "lib/media/aerendyl_-1.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 3284893,
       "exportedPath": "lib/media/aerendyl_-1.png",
       "dependencies": []
     },
     "lib/media/corvaux1-card.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 2762829,
       "exportedPath": "lib/media/corvaux1-card.png",
       "dependencies": []
     },
     "lib/media/mio.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 910233,
       "exportedPath": "lib/media/mio.png",
       "dependencies": []
@@ -4310,9 +4321,91 @@
       "dependencies": []
     },
     "lib/media/mirri-card.png": {
-      "modifiedTime": 1716737031077,
+      "modifiedTime": 1716927865919,
       "sourceSize": 2493230,
       "exportedPath": "lib/media/mirri-card.png",
+      "dependencies": []
+    },
+    "Entities/NPCs/Titans/Da'yin Kuya of Infinite Facets.md": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2946,
+      "exportedPath": "entities/npcs/titans/da'yin-kuya-of-infinite-facets.html",
+      "dependencies": [
+        "lib/media/geode_by_orangesavannah_on_deviantart.jpeg"
+      ]
+    },
+    "Entities/NPCs/Titans/Hallow.md": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1130,
+      "exportedPath": "entities/npcs/titans/hallow.html",
+      "dependencies": [
+        "lib/media/hallow.jpeg"
+      ]
+    },
+    "Maps/Earth Plane map.md": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 188,
+      "exportedPath": "maps/earth-plane-map.html",
+      "dependencies": []
+    },
+    "lib/media/geode_by_orangesavannah_on_deviantart.jpeg": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 44784,
+      "exportedPath": "lib/media/geode_by_orangesavannah_on_deviantart.jpeg",
+      "dependencies": []
+    },
+    "lib/media/hallow.jpeg": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1002816,
+      "exportedPath": "lib/media/hallow.jpeg",
+      "dependencies": []
+    },
+    "images/creatures/aerendyl_.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 3284893,
+      "exportedPath": "images/creatures/aerendyl_.png",
+      "dependencies": []
+    },
+    "images/creatures/corvaux1-card.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2762829,
+      "exportedPath": "images/creatures/corvaux1-card.png",
+      "dependencies": []
+    },
+    "images/creatures/luck_of_the_draw.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 961053,
+      "exportedPath": "images/creatures/luck_of_the_draw.png",
+      "dependencies": []
+    },
+    "images/creatures/mio.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 910233,
+      "exportedPath": "images/creatures/mio.png",
+      "dependencies": []
+    },
+    "images/creatures/mirri-card.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2493230,
+      "exportedPath": "images/creatures/mirri-card.png",
+      "dependencies": []
+    },
+    "images/creatures/priku-flintstrike.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 1456458,
+      "exportedPath": "images/creatures/priku-flintstrike.png",
+      "dependencies": []
+    },
+    "images/creatures/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 841605,
+      "exportedPath": "images/creatures/zephyrqu_httpss.mj.runfiwgph-mmjw_httpss.mj.run_mmgyrx-gle_http_d5c32a94-f793-4b10-a326-981f521b3971.png",
+      "dependencies": []
+    },
+    "images/creatures/tanix.png": {
+      "modifiedTime": 1716927865919,
+      "sourceSize": 2082436,
+      "exportedPath": "images/creatures/tanix.png",
       "dependencies": []
     }
   }
